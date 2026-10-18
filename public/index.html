@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Headline to Market — explainer desk</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Headline to Market</h1>
+    <p class="tagline">Paste a headline. Get a settleable market draft — or a clear reason why it can't be one. Nothing goes live until you approve it.</p>
+  </header>
+
+  <main>
+    <section class="card" id="generate-card">
+      <h2>New draft</h2>
+      <form id="generate-form">
+        <label for="headline">Headline <span class="req">required</span></label>
+        <textarea id="headline" rows="2" maxlength="400" placeholder="e.g. Bengaluru Metro Blue Line extension opens to public on December 1"></textarea>
+
+        <label for="snippet">Article snippet <span class="opt">optional</span></label>
+        <textarea id="snippet" rows="4" maxlength="2000" placeholder="A short excerpt of the article, if you have one."></textarea>
+
+        <button type="submit" id="generate-btn">Generate draft</button>
+      </form>
+    </section>
+
+    <section id="status" class="status hidden" aria-live="polite"></section>
+    <section id="result" aria-live="polite"></section>
+
+    <section id="drafts-section" class="hidden">
+      <h2>Drafts</h2>
+      <div id="drafts-list"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

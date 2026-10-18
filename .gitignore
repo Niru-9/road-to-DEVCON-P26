@@ -1,0 +1,22 @@
+# Aider session files
+.aider*
+
+# Agent/harness skill installs (not part of the tool source; see README)
+.claude/
+.agents/
+
+# Dependencies
+node_modules/
+
+# Environment files — never commit real credentials
+.env
+.env.*
+!.env.example
+
+# Local database
+data/*.db
+data/*.db-*
+
+# Logs and OS noise
+*.log
+Thumbs.db

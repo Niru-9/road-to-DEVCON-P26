@@ -1,0 +1,54 @@
+{
+  "description": "Labelled test headlines for Headline to Market. expectedOutcome: 'market' means the tool should produce a settleable market draft; 'unresolvable' means it should refuse with a reason (expected rejection).",
+  "cases": [
+    {
+      "id": "metro-blue-line-opening",
+      "headline": "Bengaluru Metro Blue Line extension opens to the public on December 1",
+      "snippet": "BMRCL confirmed that the Yellow Line... sorry, Blue Line extension between RT Nagar and Airport will be inaugurated on December 1, according to officials familiar with the timeline.",
+      "expectedOutcome": "market",
+      "why": "Concrete event, definite date, named authority (BMRCL) can settle it."
+    },
+    {
+      "id": "imd-rainfall-tomorrow",
+      "headline": "IMD predicts heavy rainfall in Bengaluru tomorrow",
+      "snippet": "The India Meteorological Department has issued a yellow alert for Bengaluru Urban, forecasting heavy rainfall in the next 24 hours.",
+      "expectedOutcome": "market",
+      "why": "IMD is a named source with published data that settles YES/NO."
+    },
+    {
+      "id": "rbi-repo-rate",
+      "headline": "RBI to raise repo rate at next MPC meeting",
+      "snippet": "Analysts split on whether the Reserve Bank of India will hold or hike at the upcoming Monetary Policy Committee meeting.",
+      "expectedOutcome": "market",
+      "why": "Binary, dated event; RBI's policy statement is the named source."
+    },
+    {
+      "id": "vague-traffic-improvement",
+      "headline": "Will Bengaluru traffic improve?",
+      "snippet": "",
+      "expectedOutcome": "unresolvable",
+      "why": "The real-world bad example: no metric, no source, no close condition. Expected rejection."
+    },
+    {
+      "id": "subjective-station-art",
+      "headline": "Is the new Namma Metro station art the most beautiful in India?",
+      "snippet": "Residents are debating the murals installed at the new metro stations.",
+      "expectedOutcome": "unresolvable",
+      "why": "Purely subjective; no authority can settle a taste judgement. Expected rejection."
+    },
+    {
+      "id": "settled-past-event",
+      "headline": "Did India win the 2011 ODI World Cup?",
+      "snippet": "",
+      "expectedOutcome": "unresolvable",
+      "why": "Already settled in the past; opening a market on it is meaningless. Expected rejection."
+    },
+    {
+      "id": "vague-tech-exciting",
+      "headline": "Something exciting happened in tech yesterday",
+      "snippet": "",
+      "expectedOutcome": "unresolvable",
+      "why": "No entity, no event, no verifiable condition. Expected rejection."
+    }
+  ]
+}
