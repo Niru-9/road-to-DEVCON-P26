@@ -49,6 +49,20 @@
       "snippet": "",
       "expectedOutcome": "unresolvable",
       "why": "No entity, no event, no verifiable condition. Expected rejection."
+    },
+    {
+      "id": "unmeasurable-threshold-ai-jobs",
+      "headline": "AI to replace most journalism jobs within five years",
+      "snippet": "",
+      "expectedOutcome": "unresolvable",
+      "why": "Hard case: 'most' has no measurable threshold, no named source reports this, and the claim is unfalsifiable. Expected rejection."
+    },
+    {
+      "id": "unmeasurable-threshold-rents",
+      "headline": "Bengaluru IT corridor rents to rise sharply this year",
+      "snippet": "",
+      "expectedOutcome": "unresolvable",
+      "why": "Hard case: 'rise sharply' has no measurable threshold, and no single public source tracks IT-corridor rents authoritatively. Expected rejection."
     }
   ]
 }

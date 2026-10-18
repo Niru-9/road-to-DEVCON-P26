@@ -216,7 +216,7 @@ export class LlmClient {
 // heuristics; it is NOT the product logic.
 // ---------------------------------------------------------------------------
 
-const VAGUE_WORDS = /\b(improve|improvement|better|beautiful|ugly|exciting|nice|great|good|interesting|mess|soon|happen)\b/i;
+const VAGUE_WORDS = /\b(improve|improvement|better|beautiful|ugly|exciting|nice|great|good|interesting|mess|soon|happen|replace|replaces|rise|rising|sharply)\b/i;
 const SUBJECTIVE = /\b(best|worst|favourite|favorite|prettiest|nicest|coolest)\b/i;
 
 function mockAnswer(req: LlmChatRequest, now: Date): string {
