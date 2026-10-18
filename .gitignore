@@ -5,6 +5,10 @@
 .claude/
 .agents/
 
+# Internal build docs — only README.md is published
+*.md
+!README.md
+
 # Dependencies
 node_modules/
 
