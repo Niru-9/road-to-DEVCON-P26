@@ -187,6 +187,7 @@ export class LlmClient {
       body: JSON.stringify({
         model: this.model,
         temperature: 0.2,
+        max_tokens: 1500,
         messages: [
           { role: 'system', content: req.system },
           { role: 'user', content: req.user },
